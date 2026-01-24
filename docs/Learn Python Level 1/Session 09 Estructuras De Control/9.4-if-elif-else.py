@@ -1,3 +1,16 @@
+# EJEMPLO DE UNA ITERACCIÓN DE UNA OPERADORA CON UN CLIENTE
+print("==Gracias por llamar a Tricom==")
+print("\n")
+print("Cunsulta [1]")
+print("Servicios [2]")
+print("Pagos[3]")
+print("Reclamaciones [4]")
+print("Reporte o Perdida [5]")
+marcar = int(input("Por favor marque la opción de su preferencia"))
+print("\n")
+
+
+"""
 print("Notas obtenidas en los exámenes")
 graphql = float(input("GraphQL: "))
 npm = float(input("NPM: "))
@@ -23,3 +36,4 @@ print(f"C#: {c_sharp}")
 print(f"MEAN+G: {meang}")
 print("=============================================")
 print("NOTA FINAL MEDIA: {}".format(avg))
+"""

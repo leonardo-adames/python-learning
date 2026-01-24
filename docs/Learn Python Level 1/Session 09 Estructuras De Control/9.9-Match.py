@@ -4,7 +4,7 @@
 
 # La sentencia de coincidencia de Python
 #Ejercisio de simulación de un Operador Telefónico
-print("MENÚ DEOPCIONES")
+print("GRACIAS PRO SU LLAMADA MENÚ DE OPCIONES")
 print("\n")
 print("[1] Consultas Generales")
 print("[2] Solicitudas")
