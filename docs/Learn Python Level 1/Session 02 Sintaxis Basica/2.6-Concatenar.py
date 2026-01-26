@@ -1,1 +1,0 @@
-# Aquí les dejo un Ficero .py para que practiquen todo lo aprendido en el caìtulo anterior
