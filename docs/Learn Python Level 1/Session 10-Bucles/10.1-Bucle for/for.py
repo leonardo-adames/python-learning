@@ -1,65 +1,43 @@
+'''
 # for básico
+for i in range(3, -13, -1):
+    print(f'El valor de i es: {i}')
+
+
+# Iterando una lista con for
 numbers = [6, 5, 3, 5, 3]
 total = 0
 
 for number_value in numbers:
     total += number_value   # 6, 11, 14, 19, 22
+    print(f"Total: {total}")
 
 # resultado => total = 22
 
-# for con "break"
-numbers = [6, 5, 3, 5, 3]
-total = 0
+# For con if con continue
+colores = ["rojo", "verde", "azul", "amarillo", "negro", "blanco", "gris", "morado", "naranja"]
 
-for number_value in numbers:
-    if (total >= 15):
-        break
-    total += number_value   # 6, 11, 14, 19
-# for con "continue"
+print("====Listado de colores====""\n")
 
-numbers = [6, 5, 3, 5, 3]
-total = 0
-
-for number_value in numbers:
-    if (total >= 10):
+for color in colores:
+    if color == "amarillo" or color == "negro":
+        print('-Color saltado...')
         continue
-    total += number_value   # 6, 11
+    print(f'-Color: {color}')
 
-# range (por defecto - numero de iteraciones => range(numero))
-list = ["java", "c#", "python", "javascript"]
+print("\n====Fin del listado====")
 
-for i in range(len(list)):
-    value = list[i] # java, c#, python, javascript
+'''
 
-# Especifcando la posición inicial  en range
-for i in range(1, len(list)):
-    value = list[i] # c#, python, javascript
+# For con if con break
+colores = ["rojo", "verde", "azul", "amarillo", "negro", "blanco", "gris", "morado", "naranja"]
 
-# Especificando el incremento en "range"
+print("====Listado de colores====""\n")
 
-# Empezamos en el índice 2, hasta 10 e incrementamos de 2 en 2
-# 2, 4, 6, 8
-
-for i in range(2, 10, 2):
-    value = i
-
-# Usando else para notificar que se ha finalizado
-for i in range(2, 10, 2):
-    value = i
-else:
-    value = "Hemos finalizado el bucle for por llegar a 10"
-
-for i in range(2, 10, 2):
-    if (i == 4):
+for color in colores:
+    if color == "amarillo":
+        print('-Color amarillo encontrado, deteniendo la ejecución...')
         break
-    value = i
-else:
-    value = "Hemos finalizado el bucle for por llegar a 10"
+    print(f'- {color}')
 
-# Bucle anidado
-
-for i in range(2):
-    for j in range(4):
-        value = f"Fila: { i + 1} / Columna: { j + 1}"
-
-print("Final ")
+print("\n====Fin del listado====")
